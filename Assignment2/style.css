@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+h2{
+    margin-top: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightseagreen;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 5px;
+    margin-left:40px;
+    /* margin: 50px auto; */
+  border-bottom: 1px solid black;
+}
+
+span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+    margin: 10px;
+}
+
+.mDiv {
+ background-color: ghostwhite;
+ border:5px solid blueviolet;
+ height: 500px;
+ width: 250px;
+ margin:50px auto ;
+ overflow: scroll;
+ border-radius: 10px;
+}
+
+.letter {
+    position: sticky;
+    top : 40px;
+    margin: 10px;
+    padding : 5px;
+   /*  border :2px solid rebeccapurple; */
+    border-radius: 5px;
+    background-color:rebeccapurple;
+}
+
+
