@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table for Class 8th</title>
+</head>
+<body>
+    
+   
+    <h1>This is Time Table</h1>
+
+    <!-- table start -->
+    <table border="5" bgcolor="lightgrey" cellspacing = "10" cellpadding = "10">
+    
+    <!-- table head start -->
+    <thead>
+       <tr>
+           <th>Days / Periods</th>
+           <th>1</th>
+           <th>2</th>
+           <th>3</th>
+           <th></th>
+           <th>4</th>
+           <th>5</th>
+           <th>6</th>
+       </tr>
+    </thead>
+    <!-- table head end -->
+
+    <!-- table body start -->
+    <tbody>
+
+        <tr>
+            <td>Mon</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Hindi</td>
+            <td rowspan="6">B<br>R<br>E<br>A<br>K</td>
+            <td>Maths</td>
+            <td>Games</td>
+            <td>Moral Science</td>
+        </tr>
+        <tr>
+            <td>Tue</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Hindi</td>
+            
+            <td>Maths</td>
+            <td>Games</td>
+            <td>Moral Science</td>
+        </tr>
+        <tr>
+            <td>Wed</td>
+            <td>Science</td>
+            <td>English</td>
+            <td rowspan="3">Hindi</td>
+            <td>Maths</td>
+            <td>Games</td>
+            <td>Moral Science</td>
+        </tr>
+        <tr>
+            <td>Thu</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Games</td>
+            <td>Moral Science</td>
+        </tr>
+        <tr>
+            <td>Fri</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Games</td>
+            <td>Moral Science</td>
+        </tr>
+        <tr>
+            <td>Sat</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Hindi</td>
+            <td colspan="3">Maths</td>
+        </tr>
+    </tbody>
+    <!-- table body end -->
+
+    <!-- table footer start -->
+    <tfoot>
+         <tr>
+           <td  colspan="8" align="center"><strong>This is Class VIII</strong></td>
+        </tr>
+    </tfoot>
+    <!-- table footer end -->
+
+</table>
+<!-- table end -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- ************************************************My Bio Data******************************************************************************************-->
+<h1>My Bio Data</h1>
+
+<form action="" method="GET">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstname">First Name :</label>
+        <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+        <label for="lastname">Last Name :</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+        <br>
+        <br>
+        <label for="male">Male:</label>
+    <input type="radio" id="male" name="gender">
+    <label for="female">Female:</label>
+    <input type="radio" id="female" name="gender">
+    <label for="others">Others:</label>
+    <input type="radio" id="others" name="gender">
+        <br>
+        <br>
+        <label for="dob">Date of Birth :</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+        <br>
+        <label for="email">Email :</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email">
+    <br>
+    <br>
+    <label for="phone">Phone :</label>
+    <input type="phone" id="phone" name="phone" placeholder="+91">
+    <br>
+    <br>
+    <label for="height">Height :</label>
+    <input type="text" id="height" name="height" placeholder="Height in feet">
+    </fieldset>
+
+    <fieldset>
+        <legend>Education</legend>
+
+        <label for="schoolName">School Name :</label>
+        <input type="text" id="schoolName" name="schoolName" placeholder="School Name">
+        <br>
+        <br>
+        <label for="className">Class :</label>
+        <input type="text" id="className" name="className" placeholder="Enter Class">
+        <br>
+        <br>
+
+     <label for="stream">Stream :</label> 
+    <select id="stream" name="stream">
+        <option>Stream</option>
+        <option>CSE</option>
+        <option>ME</option>
+        <option>CE</option>
+        <option>EEE</option>
+        <option>Other</option>
+    </select>
+    <br>
+    <br>
+        <label for="file">Marksheet :</label>
+        <input type="file" name="file" id="file">
+        
+    </fieldset>
+   <br>
+    <button>Submit</button>
+
+    <br>
+    <br>
+    <br>
+</form>
+
+
+
+
+
+
+</body>
+</html>
