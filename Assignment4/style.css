@@ -1,0 +1,963 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_bar .home {
+    /* padding:20px; */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f5685e;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.nav_bar .home:hover {
+    cursor: pointer;
+}
+
+.nav_bar .home h2 {
+    padding: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav_bar {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_bar ul {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav_bar ul li {
+    padding: 8px;
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    color: #AAAAAA;
+    font-size: 13px;
+}
+
+.nav_bar ul li a:hover {
+    color: #f5685e;
+}
+
+.nav_bar .ul_div {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1379px) {
+    .nav_bar {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_bar .home {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: center;
+        transition-property: width;
+        transition-timing-function: ease-in-out;
+        transition-duration: 5s;
+    }
+    .nav_bar .nav_ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1300px) {
+    .nav_bar {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_bar .home {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1145px) {
+    /* 
+        .nav_bar {
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+          
+        } */
+    .nav_bar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav_bar ul li {
+        padding: 5px;
+    }
+    .nav_bar .home {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav_bar ul li {
+        margin: 2px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav_bar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav_bar ul li {
+        margin: 2px;
+        padding: 8px;
+    }
+    .nav_bar .home {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+.wrapper {
+    margin: 10px auto;
+    height: auto;
+    width: 90%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper div {
+    width: 87%;
+    height: auto;
+    background-color: bisque;
+}
+
+.wrapper .container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    background-color: rgb(243, 243, 243);
+    padding: 30px 5px;
+}
+
+.course .card_container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 87%;
+    /* background-color: rgb(255, 96, 144); */
+}
+
+.course .cards {
+    border-radius: 5px;
+    margin: 10px;
+    width: 380px;
+    height: 580px;
+    background-color: rgb(53, 164, 255);
+}
+
+.course .course_h2 {
+    padding: 20px;
+}
+
+.course .course_h2 h2 {
+    padding: 10px;
+    letter-spacing: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 200;
+    color: rgb(88, 88, 88);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.course .course_contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 80%;
+    height: 120px;
+    background-color: rgb(255, 166, 1);
+    border-radius: 5px;
+    margin: 40px 20px;
+}
+
+.course .course_contact .para {
+    margin-left: 20px;
+}
+
+.course .course_contact .para p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    padding: 20px;
+    color: white;
+}
+
+.course .course_contact .btn {
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.course .course_contact .btn a {
+    font-family: 'Maven Pro', sans-serif;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(255, 166, 1);
+}
+
+
+/* online course */
+
+.on_course {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    background-color: rgb(243, 243, 243);
+    padding: 50px 5px;
+}
+
+.on_course .card_container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 87%;
+    /* background-color: rgb(255, 96, 144); */
+}
+
+.on_course .cards {
+    margin: 10px;
+    width: 380px;
+    height: 580px;
+    background-color: rgb(53, 164, 255);
+}
+
+.on_course .course_h2 {
+    padding: 20px;
+}
+
+.on_course .course_h2 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    font-weight: 400;
+    color: rgb(88, 88, 88);
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.on_course .course_h2 h2 {
+    padding: 10px;
+    letter-spacing: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 200;
+    color: rgb(88, 88, 88);
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+/* summer courses */
+
+.sum_course {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    background-color: rgb(243, 243, 243);
+    padding: 50px 5px;
+}
+
+.sum_course .card_container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 87%;
+    /* background-color: rgb(255, 96, 144); */
+}
+
+.sum_course .cards {
+    margin: 10px;
+    width: 380px;
+    height: 580px;
+    background-color: rgb(53, 164, 255);
+}
+
+.sum_course .course_h2 {
+    padding: 20px;
+}
+
+.sum_course .course_h2 h2 {
+    padding: 10px;
+    width: auto;
+    letter-spacing: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 200;
+    color: rgb(88, 88, 88);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.sum_course .course_h2 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: rgb(88, 88, 88);
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+/* number speak section */
+
+.num_speak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+    margin: 30px auto;
+    background-color: rgb(243, 243, 243);
+    padding: 50px 5px;
+}
+
+.num_speak .container {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    /* background-color: thistle; */
+    padding: 10px;
+}
+
+.num_speak .num_speak_h2 {
+    display: flex;
+    justify-content: start;
+}
+
+.num_speak .num_speak_h2 h2 {
+    padding: 10px;
+    letter-spacing: 3px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 200;
+    color: rgb(88, 88, 88);
+    font-size: 3rem;
+}
+
+.num_speak .container .cards {
+    border: 1px solid rgb(88, 88, 88);
+    background-color: white;
+    margin: 10px;
+    width: 280px;
+    height: 280px;
+}
+
+
+/* team section */
+
+.team {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    background-color: rgb(243, 243, 243);
+    padding: 30px 5px;
+}
+
+.team .card_container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 87%;
+    /* background-color: rgb(255, 96, 144); */
+}
+
+.team .cards {
+    margin: 10px;
+    width: 280px;
+    height: 480px;
+    background-color: rgb(53, 164, 255);
+}
+
+.team .team_h2 {
+    padding: 20px;
+}
+
+.team .team_h2 h2 {
+    padding: 10px;
+    width: auto;
+    letter-spacing: 3px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 200;
+    color: rgb(88, 88, 88);
+    font-size: 3rem;
+}
+
+.team .btn {
+    padding: 1px;
+    margin: 10px 10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 57, 57);
+    background-color: rgb(255, 255, 255);
+}
+
+.team a {
+    background-color: rgb(255, 57, 57);
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-family: 'Maven Pro', sans-serif;
+    transition-duration: 0.5s;
+}
+
+.team a:hover {
+    background-color: white;
+    color: black;
+}
+
+.cards {
+    border-radius: 2px;
+    box-shadow: 1px 2px 5px rgb(88, 88, 88);
+}
+
+.foot {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+.foot .foot_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    width: 80%;
+    /* background-color: black; */
+}
+
+.foot .first_div {
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.foot .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot .para {
+    margin: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot .para p {
+    padding: 10px 5px;
+    color: rgb(216, 216, 216);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.foot .logo img {
+    width: 250px;
+    height: auto;
+}
+
+.foot .foot_nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.foot .ncards {
+    height: 370px;
+    margin: 10px;
+    width: 350px;
+}
+
+.foot .foot_link {
+    margin: 20px 10px;
+    height: 50px;
+    width: 35%;
+    background-color: darkturquoise;
+}
+
+.foot .foot_nav .head_3 {
+    width: 100%;
+    padding: 9px 4px;
+}
+
+.foot .foot_nav .head_3 h5 {
+    margin: 5px;
+    color: ghostwhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.foot_nav .list {
+    margin-top: 10px;
+}
+
+.foot_nav .list ul {
+    list-style-type: none;
+}
+
+.foot_nav .list ul li {
+    padding: 5px 6px;
+    color: ghostwhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.foot .foot_nav .para p {
+    margin: 5px;
+    color: ghostwhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.foot .foot_nav .cards .para {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+
+/*Live summer course card style */
+
+.course .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course .card_container .card_wrapper {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(19, 158, 112); */
+}
+
+.course .card_container .card_wrapper .price {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+}
+
+.course .card_container .card_wrapper .h3_gr h3 {
+    color: white;
+    padding: 3px;
+    margin: 3px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.course .card_container .card_wrapper .h3_gr .mentor {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 12px 15px;
+    font-size: 16px;
+    margin: 10px 0px 10px 10px;
+}
+
+.course .card_container .card_wrapper .divider {
+    background-color: white;
+    width: 100%;
+    height: 0.1px;
+    opacity: 0.3;
+    margin: 10px 0px;
+}
+
+.course .card_container .card_wrapper .h3_gr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.course .card_container .card_wrapper .h3_gr .main_h3 {
+    font-size: 30px;
+}
+
+.course .card_container .card_wrapper .price {
+    font-family: 'Maven Pro', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.course .card_container .card_wrapper .price .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.course .card_container .card_wrapper .price .btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.course .card_container .card_wrapper .price p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.course .card_container .card_wrapper .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    /* background-color: whitesmoke; */
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.course .card_container .card_wrapper .logo div {
+    height: 70%;
+    width: 70%;
+}
+
+.course .card_container .card_wrapper .logo img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* online course */
+
+.on_course .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.on_course .card_container .card_wrapper {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(19, 158, 112); */
+}
+
+.on_course .card_container .card_wrapper .price {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+}
+
+.on_course .card_container .card_wrapper .h3_gr h3 {
+    color: white;
+    padding: 3px;
+    margin: 3px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.on_course .card_container .card_wrapper .h3_gr .mentor {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 12px 15px;
+    font-size: 16px;
+    margin: 10px 0px 10px 10px;
+}
+
+.on_course .card_container .card_wrapper .divider {
+    background-color: white;
+    width: 100%;
+    height: 0.1px;
+    opacity: 0.3;
+    margin: 10px 0px;
+}
+
+.on_course .card_container .card_wrapper .h3_gr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.on_course .card_container .card_wrapper .h3_gr .main_h3 {
+    font-size: 30px;
+}
+
+.on_course .card_container .card_wrapper .price {
+    font-family: 'Maven Pro', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.on_course .card_container .card_wrapper .price .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.on_course .card_container .card_wrapper .price .btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.on_course .card_container .card_wrapper .price p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.on_course .card_container .card_wrapper .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    /* background-color: whitesmoke; */
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.on_course .card_container .card_wrapper .logo div {
+    height: 70%;
+    width: 70%;
+}
+
+.on_course .card_container .card_wrapper .logo img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.on_course .cards {
+    background-color: rgb(56, 158, 52);
+}
+
+
+/* .on_course .cards {
+    background-color: whitesmoke;
+} */
+
+.sum_course .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(78, 78, 78);
+}
+
+.sum_course .card_container .card_wrapper {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(19, 158, 112); */
+}
+
+.sum_course .card_container .card_wrapper .price {
+    position: absolute;
+    bottom: 0px;
+    color: rgb(78, 78, 78);
+}
+
+.sum_course .card_container .card_wrapper .h3_gr h3 {
+    color: rgb(78, 78, 78);
+    padding: 3px;
+    margin: 3px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sum_course .card_container .card_wrapper .h3_gr .mentor {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 12px 15px;
+    font-size: 16px;
+    margin: 10px 0px 10px 10px;
+}
+
+.sum_course .card_container .card_wrapper .divider {
+    background-color: white;
+    width: 100%;
+    height: 0.1px;
+    opacity: 0.3;
+    margin: 10px 0px;
+}
+
+.sum_course .card_container .card_wrapper .h3_gr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sum_course .card_container .card_wrapper .h3_gr .main_h3 {
+    font-size: 30px;
+}
+
+.sum_course .card_container .card_wrapper .price {
+    font-family: 'Maven Pro', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.sum_course .card_container .card_wrapper .price .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(173, 173, 173, 0.4);
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.sum_course .card_container .card_wrapper .price .btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.sum_course .card_container .card_wrapper .price p {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sum_course .card_container .card_wrapper .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    /* background-color: whitesmoke; */
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.sum_course .card_container .card_wrapper .logo div {
+    height: 70%;
+    width: 70%;
+}
+
+.sum_course .card_container .card_wrapper .logo img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.sum_course .cards {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* number speak style */
+
+.num_speak .container .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num_speak .container .cards .cards_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    /* background-color: rgb(218, 31, 31); */
+    font-family: monospace;
+    text-align: center;
+}
+
+.num_speak .container .cards .cards_wrap .stu {
+    padding: 5px;
+    font-size: 1.4rem;
+    color: rgb(100, 100, 100);
+}
+
+.num_speak .container .cards .cards_wrap .num {
+    font-size: 4rem;
+    padding: 20px;
+    color: rgb(75, 75, 75);
+}
+
+.num_speak .container .cards .cards_wrap p {
+    padding: 5px;
+    color: rgb(100, 100, 100);
+    font-size: 1rem;
+}
+
+
+/* team style */
+
+
+/* 
+.team .card_container .cards_wrap {} */
