@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(147, 0, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+/* main {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.inp_container {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+main {
+    width: 197px;
+    margin: 20vh auto;
+}
+
+input {
+    padding: 6px;
+    outline: none;
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+button {
+    padding: 6px;
+    background-color: rgb(71, 120, 255);
+    color: white;
+    outline: none;
+    font-weight: 700;
+}
+
+.todos {
+    width: 100%;
+}
+
+.todos .list {
+    list-style-type: none;
+}
+
+.todos .list li {
+    padding: 5px;
+    margin-top: 5px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(48, 48, 48);
+}
+
+.list li:hover {
+    cursor: pointer;
+}
